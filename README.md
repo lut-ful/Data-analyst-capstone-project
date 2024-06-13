@@ -1,23 +1,17 @@
-
-# IBM Data Analyst Capstone Project
+# IBM Capstone Project: Stack Overflow Job Survey
 
 ## Overview
 
-This repository contains the IBM Data Analyst Capstone Project, which demonstrates my proficiency in data analysis, data visualization, and dashboard creation. The project involves cleaning, analyzing, and visualizing a dataset to provide actionable insights and support decision-making.
+This project is part of the IBM Data Science Professional Certificate Capstone. The goal of the project is to analyze the Stack Overflow Developer Survey data to gain insights into developer demographics, job preferences, and other trends in the software development industry.
 
-## Project Details
+## Data Source
 
-### Project Title
+The data used in this project comes from the Stack Overflow Developer Survey, which is conducted annually by Stack Overflow. The survey covers a wide range of topics, including programming languages, frameworks, job satisfaction, salaries, and more.
 
-Credit Card Financial Report Dashboard
-
-### Description
-
-The Credit Card Financial Report Dashboard is an interactive tool designed to analyze weekly credit card transactions and customer data. The dashboard leverages Python, SQL, and Power BI to streamline data processing, monitor key performance metrics, and deliver actionable insights to stakeholders.
 
 ### Key Features
 
-- **Data Import**: Facilitates weekly data import for continuous analysis.
+- **Data Import**: Facilitates data imported from Stack Overflow for continuous analysis.
 - **Data Cleaning**: Ensures data quality and consistency.
 - **Data Analysis**: Analyzes key metrics and trends in credit card transactions.
 - **Visualization**: Provides interactive dashboards for easy interpretation of data.
@@ -29,32 +23,19 @@ The Credit Card Financial Report Dashboard is an interactive tool designed to an
 - **SQL**: Data extraction and querying.
 - **Power BI,Google Looker,Excel**: Data visualization and dashboard creation.
 
-## Installation
 
-1. Clone this repository:
-   ```sh
-   git clone https://github.com/yourusername/ibm-data-analyst-capstone.git
-   ```
+## Results
 
-2. Navigate to the project directory:
-   ```sh
-   cd ibm-data-analyst-capstone
-   ```
+The results of the analysis, including visualizations and summary statistics, are saved in the `m7_IBM_Capstone_presentation.pptx/` directory. You can find detailed explanations and interpretations in power point slides.
+mx_name.ipynb contains what I did in that module.
+example: 'M2DataWrangling-lab.ipynb/' contains Wrangling of the data
 
-3. Install the required Python packages:
-   ```sh
-   pip install -r requirements.txt
-   ```
 
-## Usage
+## Acknowledgments
 
-1. Import the dataset by running the `data_import.py` script.
-2. Open and run the Jupyter notebooks in the `notebooks` directory to clean, analyze, and visualize the data.
-3. Open the Power BI dashboard file in the `dashboards` directory to explore the interactive visualizations.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
+- IBM for providing the framework and resources for this capstone project.
+- Stack Overflow for conducting and sharing their annual Developer Survey.
+- The open-source community for their invaluable tools and libraries.
 
 
 ## Contact
