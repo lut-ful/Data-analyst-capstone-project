@@ -27,32 +27,9 @@ The Credit Card Financial Report Dashboard is an interactive tool designed to an
 
 - **Python**: Data cleaning and preprocessing.
 - **SQL**: Data extraction and querying.
-- **Power BI**: Data visualization and dashboard creation.
+- **IBM Cognos**: Data visualization and dashboard creation.
+- **Google Looker**: Data visualization and dashboard creation.
 
-## Project Structure
-
-```
-.
-├── data
-│   └── credit_card_transactions.csv
-├── notebooks
-│   ├── data_cleaning.ipynb
-│   ├── data_analysis.ipynb
-│   └── data_visualization.ipynb
-├── dashboards
-│   └── credit_card_dashboard.pbix
-├── scripts
-│   └── data_import.py
-├── README.md
-└── LICENSE
-```
-
-- **data**: Contains the dataset used for analysis.
-- **notebooks**: Jupyter notebooks for data cleaning, analysis, and visualization.
-- **dashboards**: Power BI dashboard files.
-- **scripts**: Python scripts for data import and processing.
-- **README.md**: This file.
-- **LICENSE**: Project license.
 
 ## Installation
 
