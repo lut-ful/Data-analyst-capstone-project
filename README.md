@@ -1,73 +1,60 @@
 
-# IBM Data Analyst Capstone Project
+# Credit Card Financial Report Dashboard
 
-## Overview
+## What did I do in this project?
+1. Developed interactive dashboards using transaction and customer data from an SQL database to provide real-time insights.
+2. Streamlined data processing and analysis to monitor key performance metrics and trends.
+3. Shared actionable insights with stakeholders based on dashboard findings to support the decision-making process.
 
-This repository contains the IBM Data Analyst Capstone Project, which demonstrates my proficiency in data analysis, data visualization, and dashboard creation. The project involves cleaning, analyzing, and visualizing a dataset to provide actionable insights and support decision-making.
+## Project Report
 
-## Project Details
+### Objective
+To develop a comprehensive credit card weekly dashboard that provides real-time insights into key performance metrics and trends, enabling stakeholders to monitor and analyze credit card operations effectively.
 
-### Project Title
+### Data Collection
+Data was collected from an online open-source platform. It was then imported into the SQL server using PostgreSQL. The SQL server was connected to Power BI, from which the data was imported into Power BI dashboards. If the SQL server data updates, the dashboard updates after refreshing the data in Power BI.
 
-Credit Card Financial Report Dashboard
+### DAX Queries
+current_week_revenue = CALCULATE(
+    SUM('public cc_detail'[revenue]),
+    FILTER(
+        ALL('public cc_detail'),
+        'public cc_detail'[week_num2] = MAX('public cc_detail'[week_num2])
+    )
+)
+prev_week_revenue = CALCULATE(
+    SUM('public cc_detail'[revenue]),
+    FILTER(
+        ALL('public cc_detail'),
+        'public cc_detail'[week_num2] = MAX('public cc_detail'[week_num2]) - 1
+    )
+)
+wow_revenue = DIVIDE(([current_week_revenue] - [prev_week_revenue]), [prev_week_revenue])
 
-### Description
+### Dashboards
+![Dashboard 1](https://github.com/lut-ful/Credit-Card-Financial-Report-Dashboard/assets/108027559/da23340a-aa76-48d2-857c-e3b036581ce8)
+![Dashboard 2](https://github.com/lut-ful/Credit-Card-Financial-Report-Dashboard/assets/108027559/cb2c9d0d-41f8-4cb6-806d-dae290be41ae)
+![Report Insights](https://github.com/lut-ful/Credit-Card-Financial-Report-Dashboard/assets/108027559/deb688d9-b4db-47f0-97ed-fd2938e2647b)
 
-The Credit Card Financial Report Dashboard is an interactive tool designed to analyze weekly credit card transactions and customer data. The dashboard leverages Python, SQL, and Power BI to streamline data processing, monitor key performance metrics, and deliver actionable insights to stakeholders.
+### Insights in Week 53
+#### Week-on-Week Change
+- Revenue increased by 28.8%
+- Total transaction amount and volume increased by 35% and 3.4%, respectively
+- Customer count increased by 12.8%
 
-### Key Features
+#### Year-to-Year Overview
+- Overall revenue: 56.5 Million
+- Total interest: 8 Million
+- Total transaction amount: 45.5 Million
+- Male customers contribute more to revenue
+- Blue and Silver credit card holders contribute 93% of overall transactions
+- TX, NY, and CA contribute 68% of total transactions
+- Overall activation rate: 57.5%
+- Overall delinquent rate: 6.06%
 
-- **Data Import**: Facilitates weekly data import for continuous analysis.
-- **Data Cleaning**: Ensures data quality and consistency.
-- **Data Analysis**: Analyzes key metrics and trends in credit card transactions.
-- **Visualization**: Provides interactive dashboards for easy interpretation of data.
-- **Decision Support**: Offers insights to support data-driven decision-making.
-
-## Technologies Used
-
-- **Python**: Data cleaning and preprocessing.
-- **SQL**: Data extraction and querying.
-- **IBM Cognos**: Data visualization and dashboard creation.
-- **Google Looker**: Data visualization and dashboard creation.
-
-
-## Installation
-
-1. Clone this repository:
-   ```sh
-   git clone https://github.com/yourusername/ibm-data-analyst-capstone.git
-   ```
-
-2. Navigate to the project directory:
-   ```sh
-   cd ibm-data-analyst-capstone
-   ```
-
-3. Install the required Python packages:
-   ```sh
-   pip install -r requirements.txt
-   ```
-
-## Usage
-
-1. Import the dataset by running the `data_import.py` script.
-2. Open and run the Jupyter notebooks in the `notebooks` directory to clean, analyze, and visualize the data.
-3. Open the Power BI dashboard file in the `dashboards` directory to explore the interactive visualizations.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For questions or feedback, please contact me at lutfulkabir1757@gmail.com.
+## Connect
+- [LinkedIn](https://www.linkedin.com/in/mdlutfulkabir/)
 
 ---
 
-[GitHub Repository](https://github.com/yourusername/ibm-data-analyst-capstone)
-
-[LinkedIn](https://www.linkedin.com/in/mdlutfulkabir/)
+Feel free to explore the [GitHub Repository](https://github.com/lut-ful/Credit-Card-Financial-Report-Dashboard) for more details and to view the full project.
