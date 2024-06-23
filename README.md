@@ -38,12 +38,8 @@ example: 'M2DataWrangling-lab.ipynb/' contains Wrangling of the data
 - The open-source community for their invaluable tools and libraries.
 
 
-## Contact
+## 📫 Connect
 
-For questions or feedback, please contact me at lutfulkabir1757@gmail.com.
-
----
-
-[GitHub Repository](https://github.com/yourusername/ibm-data-analyst-capstone)
-
-[LinkedIn](https://www.linkedin.com/in/mdlutfulkabir/)
+- Email: lutfulkabir1757@gmail.com
+- LinkedIn: [Md. Lutful Kabir](https://www.linkedin.com/in/mdlutfulkabir/)
+- Portfolio: [Md. Lutful Kabir](https://www.datascienceportfol.io/mdlutfulkabir)
